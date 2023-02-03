@@ -1,0 +1,173 @@
+/* FONT E DIMENSIONI GENERALI */
+html,
+body {
+    background-image: url(/assets/images/sfondo.png);
+    background-repeat: repeat;
+    font-family: OpenSans, sans-serif;
+    font-size: 1.2rem;
+    color: #393d41;
+    line-height: 1.65;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.material-symbols-outlined {font-size: smaller;}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #25a2c3;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem
+}
+
+p,
+a {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem
+}
+
+/* info */
+.info>div {
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 2px solid #dee1e3;
+    margin: 2rem;
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+/* foto 1 */
+#fotoradius img {
+    border-radius: 100%;
+    background-size: cover;
+    border: 5px #dee1e3 solid;
+    display: inline-block;
+}
+
+/* logo header */
+#logo {
+    background-color: black;
+    border-bottom: solid;
+    padding-bottom: 1.3rem;
+    padding-top: 1rem;
+}
+
+#logo img {
+    width: 10rem;
+}
+
+/* BANNER */
+#banner1 {
+    background-image: url(/assets/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 480;
+    padding-bottom: 2.8rem;
+    padding-top: 1.5rem;
+    border-bottom: 5px solid #8d96a0;
+}
+
+/* button */
+#button {
+    background-color: #f04c2f;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.17cm;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+/* versione desktop */
+#button:hover {
+    border: 2px solid #ad3621;
+    box-shadow: 2px 2px 2px 2px#9e311e8f;
+}
+
+/* foto 1 */
+#fotoradius img {
+    border-radius: 100%;
+
+    background-size: cover;
+    border: 5px #dee1e3 solid;
+    display: inline-block;
+}
+
+/* Epicode Garantisce */
+.banner2 {
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    background-color: #f04c2fe1;
+    color: white;
+    border-top: #9e3320e1 solid 5px;
+    border-bottom: #9e3320e1 solid 5px
+}
+
+#smaller {
+    font-size: 17px;
+    display: block;
+}
+
+/* schede */
+.scheda {
+    height: 100%;
+    width: 100%;
+}
+
+.scheda>div {
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 2px solid #dee1e3;
+
+    margin: 2rem;
+    display: inline-block;
+    width: 20rem;
+    vertical-align: top;
+
+}
+
+.scheda>div>img {
+    width: 100%;
+    height: 10em;
+}
+
+/* footer */
+footer {
+    background-color: #25a2c3;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-top: #196e86d7 solid 10px;
+    border-bottom: #196f86 solid 5px;
+}
+
+footer>div,
+h2,
+p>h2,
+a {
+    color: #e4f5fa;
+    text-decoration: none;
+}
+
+hr {
+    color: #d2f1fa;
+    width: 15em;
+}
+
+.pixabay {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* versione desktop */
+footer a:hover {
+    text-decoration: underline;
+}
