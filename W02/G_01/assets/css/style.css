@@ -1,0 +1,19 @@
+body {font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #415fe1;
+    color: white;
+}
+
+h2 {font-size: 1.2em;}
+h3, h1 {font-size: 2em;}
+a {color: white;text-decoration: none}
+hr{color: white;size: 3px;}
+li {font-weight: 800;}
+
+
+.page { width: 15rem;display: block;text-align: center;}
+.page:hover {background-color: rgba(0, 0, 0, 0.548);text-decoration: underline;}
+
+#footer {text-align: center;}
+#freccie {font-size: small;}
