@@ -1,8 +1,8 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
-var a = document.getElementById('a');
-var b = document.getElementById('b ');
+var a = 18;
+var b = 5;
 var R01 = '';
 if (a < b) {
     R01 = `${b} e' il numero piu' grande`
