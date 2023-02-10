@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+body{zoom: 200%;}
+
+body,
+button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.box_calcolatrice {
+    margin-top: 10px;
+    width: 200px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2.5px solid rgba(18, 61, 90, 0.651);
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.box_calcolatrice div {
+    padding-bottom: 2.5px;
+}
+
+.box_calcolatrice div>button {
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 25%;
+    border: 2px solid rgba(18, 61, 90, 0.651);
+    background-color: rgba(36, 25, 138, 0.267);
+    display: inline-block;
+}
+
+#box_schermo {width: 100%;height: 90px;
+    border-bottom: 2.5px solid rgba(18, 61, 90, 0.651);
+    border-top: 2.5px solid rgba(18, 61, 90, 0.651);
+
+    background-color: rgba(255, 255, 255, 0.781);
+}
+#schermo { text-align: center;}
+
+#uguale {
+    width: 140px;
+    border-radius: 3cm
+}
