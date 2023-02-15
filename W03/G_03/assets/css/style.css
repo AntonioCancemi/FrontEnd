@@ -1,5 +1,11 @@
 body {
-    background-color: blueviolet;
+    background: #C9D6FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .fatto {
@@ -17,4 +23,56 @@ body {
         url('../font/fontawesome-webfont.woff') format('woff'),
         url('../font/fontawesome-webfont.ttf') format('truetype'),
         url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
+}
+
+li {text-align: left;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    list-style-type: none;
+    padding: 3px;
+}
+
+.delete {color: white;
+    text-align: right;
+    display: inline;
+    background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.537);
+    font-weight: bold;
+}
+
+ul {
+    padding: 3px;
+}
+
+.input {
+    padding: 5px;
+    
+    border-radius: 5px;
+}
+
+
+#box {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.458);
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#testo {
+    border-radius: 5px;
+    width: 70%;
+    border-style: groove;
+}
+
+#aggiungi {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    color: white;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.537);
 }
