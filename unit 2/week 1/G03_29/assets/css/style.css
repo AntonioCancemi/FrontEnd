@@ -1,0 +1,131 @@
+body {margin: auto;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 3em;
+  padding: 15px 20px;
+  font-weight: 800;
+  margin: auto;
+  color: #62363b;
+}
+h2 {
+  font-size: 2.3em;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #62363b;
+}
+
+/* navbar */
+nav {
+    height: 120px;
+  background-color: #faf6e1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width:576px){
+    .logo{order: 1;
+    }
+    
+}
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+#navbar li {
+    order: 2;
+  color: #62363b;
+  margin: auto 0.7em;
+  background-color: #f3df85;
+  border-radius: 20cm;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 450;
+}
+#logo {display: flex;
+  padding: 20px 10px !important;
+  font-size: 1.9em !important;
+}
+#logo img{margin-right: 5px;}
+/* card */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.product_card {
+  border-radius: 1cm;
+  background-color: #faf6e1;
+  width: 45%;
+  margin: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.product_card img {
+  display: flex;
+  width: 100%;
+  border-top-left-radius: 1cm;
+  border-top-right-radius: 1cm;
+}
+
+.content_card {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+  color: #62363b;
+  align-items: center;
+}
+.content_card span {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+.prezzo {
+  font-size: 1.3em;
+}
+.addToCart {
+  color: #62363b;
+  background-color: #f3df85;
+  border: 0;
+  border-radius: 1cm;
+  font-weight: 800;
+  font-size: 1em;
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+/* article */
+section{margin: auto 15px;}
+.flexible_article {
+  display: flex;
+  background-color: #faf6e1;
+  padding: 20px 30px;
+  text-align: left;
+  line-height: 1.2em;
+  border-radius: 1cm;
+}
+.flexible_article img {
+  width: 100%;
+}
+
+.flexible_article h3 {
+  color: #62363b;
+  padding-bottom: 10px;
+  font-size: 1.6em;
+  margin-top: 10px;
+}
+.flexible_article p {
+  color: #62363b;
+  padding-bottom: 20px;
+}
