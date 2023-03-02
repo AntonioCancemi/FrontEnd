@@ -1,0 +1,71 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+#testoAlternato p span i {
+  position: absolute;
+}
+#testoAlternato {
+  border: 2px solid black;
+  width: 400px;
+  padding: 10px 20px;
+  line-height: 1.4em;
+  display: flex;
+
+  flex-direction: column;
+}
+
+#testpAlternato p {
+  display: flex;
+}
+.pri {
+  animation: fadeInOut 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s both;
+}
+
+.sec {
+  opacity: 0;
+  animation: fadeInOut 3s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+}
+
+.ter {
+  animation: fadeIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) 6s both;
+}
+@keyframes fadeIn {
+    0% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@keyframes fadeInOut {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
