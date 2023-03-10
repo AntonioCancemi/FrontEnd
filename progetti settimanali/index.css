@@ -1,0 +1,48 @@
+Collegare un Css:
+<link rel=stylesheet href=/assests/...>  nei meta
+ 
+Misure
+Pixel px
+punti pt
+%
+em propor parent
+rem propor root (radice)
+vw 		larghezza
+wh		altezza (rischio)
+
+proprietà dei testi
+Serif abbelliti
+sans-serif non abbelliti: arial, verdana, helvetica, georgia, brush script mt
+monospace come computer
+cursive
+fantsy 
+
+per impostare il font personale
+@font-face {font-family: FontPersonale;
+
+src: url('railway.woff2') format('woff2'), /* Browser recenti*/
+
+	url('railway.woff') format('woff'), /* Browser moderni */
+
+	url('railway.ttf')*/format('truetype'), /* Safari, Android, ios */}
+
+	P {font-family: FontPersonale;}
+
+come impostare font in conteiner
+article {
+
+font-family: Arial, Helvetica, sans-serif;
+
+font-size: 1.1rem; /* px, em, %, vw / 
+font-style: italic; / normal / 
+font-weight: bold; / normal, 100-900 */
+font-variant: small-caps; /* normal / 
+line-height: 1.5; / da zero in su */
+
+body {
+	font: italic small-caps bold 1.1rem/1.4 Arial, sans-serif;
+
+Selettore {proprietà:valore}    <!--sintassi case senitive-->
+* {font style : italic;} seletore universale
+p= selettore base
+em= selettore base con pro
