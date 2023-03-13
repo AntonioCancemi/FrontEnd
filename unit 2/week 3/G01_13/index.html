@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eserizi Classi Js</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" placeholder="Inserisci il nome " id="name" />
+      <input type="text" placeholder="Padrone " id="owner" />
+      <input type="text" placeholder="specie " id="species" />
+      <input type="text" placeholder="razza " id="breed" />
+      <button type="button" onclick="savePet()" id="add">ADD</button>
+    </form>
+    <h1>Pet List</h1>
+    <ul id="petList"></ul>
+    <hr />
+    <h2>Confronto Owner modulabile</h2>
+    <button type="button" id="result" onclick="result()">Confronto </button>
+    <p id="text"></p>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
