@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Sono:wght@400;500&display=swap");
+/* font-family: 'Rubik', sans-serif;
+  font-family: 'Sono', sans-serif; */
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: rgba(240, 248, 255, 0.62);
+  background-image: url("https://img.freepik.com/free-vector/world-book-day-background_23-2149322698.jpg?w=1380&t=st=1678888189~exp=1678888789~hmac=84c6f867b5d1f8f75eb1a195fc0369e2671c59348041c3a01cf4951c1a0fecc8");
+  height: 100%;
+  background-size: auto;
+}
+nav div a {
+  font-family: "Sono", sans-serif;
+  font-weight: 500;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.803);
+}
+section h1 {
+  font-family: "Sono", sans-serif;
+  font-weight: 500;
+}
+#cardContainer {
+  background-color: rgba(36, 153, 255, 0.229);
+}
+#cartIcon {
+  width: 40px;
+}
+.deleteClass {
+  display: none !important;
+}
