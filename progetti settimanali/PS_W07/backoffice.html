@@ -62,9 +62,11 @@
       </nav>
     </header>
     <!-- form backoffice -->
-    <div class="container-fluid">
+    <div class="container-fluid"> 
       <div id="row" class="row justify-content-center pt-3">
-        <div id="preview" class="col-4"></div>
+        
+    
+        <div id="preview" class="col-4 d-none"></div>
         <div class="col-6">
           <form class="border border-1 rounded p-3">
             <div class="mb-3">
@@ -98,22 +100,168 @@
               </div>
             </div>
 
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" id="publish" class="btn btn-primary">
-                Publish
-              </button>
+            <div
+              class="btn-group"
+              id="btnGroup"
+              role="group"
+              aria-label="Basic example"
+            >
+            <button type="submit" id="publish" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">PUBLISH
               <button
                 type="button"
                 onclick="renderCard()"
                 class="btn btn-primary"
               >
-                Preview
+                PREVIEW
+              </button>
+              <button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdropReset">
+                RESET
               </button>
             </div>
           </form>
         </div>
       </div>
     </div>
+
+
+
+<!-- Modal PUBLISH -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">PUBLISH</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sei sicuro di voler pubblicare il tuo annuncio?
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button"   class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal RESET-->
+<div class="modal fade" id="staticBackdropReset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelReset" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabelReset">RESET</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sei sicuro di voler cancellare tutti i campi compilati?
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" onclick="reset()" class="btn btn-danger" data-bs-dismiss="modal">CONFERMA</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Delete -->
+<div class="modal fade" id="staticBackdropDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelDelete" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabelDelete">RESET</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sei sicuro di voler cancellare tutti i campi compilati?
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" onclick="deleteThis()"  class="btn btn-danger" data-bs-dismiss="modal">CONFERMA</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>CRUDAZON
+          </h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            consequatur vero iste, error tempore quis ex doloremque
+            cupiditate, nostrum harum tempora, minus reiciendis facere et?
+            Rerum possimus aliquam commodi quis.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+          <p>
+            <a href="#!" class="text-reset">Cellulari</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Computer</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Dischi</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+          <p>
+            <a href="/backoffice.html" class="text-reset">BackOffice</a>
+          </p>
+          <p>
+            <a href="/home.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a
+              href="https://epicode.com/it/?utm_source=adwords&utm_campaign=Brand&utm_adgroup=brandexact&utm_term=epicode&utm_medium=ppc&hsa_acc=1246633295&hsa_cam=11897141170&hsa_grp=115607542236&hsa_ad=639941169967&hsa_src=g&hsa_tgt=kwd-1083842420863&hsa_kw=epicode&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw5dqgBhBNEiwA7PryaM0d3v97a9gUdGt94ZTozGbrL2ZElodyIziLZW5nHgbuYkzXj7jgsRoCHm4QAvD_BwE"
+              class="text-reset"
+              >MY school</a
+            >
+          </p>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div
+    class="text-center p-4"
+    style="background-color: rgba(0, 0, 0, 0.025)"
+  >
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://github.com/AntonioCancemi"
+      >ANTONIOCANCEMI</a
+    >
+  </div>
+  <!-- Copyright -->
+</footer>
+
 
     <script src="assets/js/backoffice.js"></script>
     <script

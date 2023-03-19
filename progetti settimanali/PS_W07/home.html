@@ -10,6 +10,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -18,9 +19,9 @@
   <body>
     <!-- navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="fixed-top navbar navbar-expand-lg bg-primary bg-gradient">
         <div class="container-fluid mx-lg-5">
-          <a class="navbar-brand" href="home.html">
+          <a class="navbar-brand text-light" href="home.html">
             <i class="bi bi-bag-heart-fill"></i>
             CRUDAZON</a
           >
@@ -38,12 +39,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html"
+                <a
+                  class="text-light nav-link active"
+                  aria-current="page"
+                  href="home.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="backoffice.html">BackOffice</a>
+                <a class="nav-link text-light" href="backoffice.html"
+                  >BackOffice</a
+                >
               </li>
             </ul>
           </div>
@@ -52,13 +58,112 @@
     </header>
 
     <!-- hero -->
-
+    <br />
+    <br />
     <!-- trending product -->
     <div class="container">
-      <div id="row" class="row row-cols-1 row-cols-md-3 g-4"></div>
+      <h1 class="py-4">Trending product</h1>
+      <div
+        id="row"
+        class="row row-cols-1 px-sm-4 row-cols-md-4 row-cols-sm-3 row-cols-lg-5 g-2"
+      >
+        <div
+          class="spinner-border text-warning d-block mx-auto mb-4"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
     </div>
 
-    <!-- footer -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>CRUDAZON
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                consequatur vero iste, error tempore quis ex doloremque
+                cupiditate, nostrum harum tempora, minus reiciendis facere et?
+                Rerum possimus aliquam commodi quis.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Cellulari</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Computer</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Dischi</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="/backoffice.html" class="text-reset">BackOffice</a>
+              </p>
+              <p>
+                <a href="/home.html" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a
+                  href="https://epicode.com/it/?utm_source=adwords&utm_campaign=Brand&utm_adgroup=brandexact&utm_term=epicode&utm_medium=ppc&hsa_acc=1246633295&hsa_cam=11897141170&hsa_grp=115607542236&hsa_ad=639941169967&hsa_src=g&hsa_tgt=kwd-1083842420863&hsa_kw=epicode&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw5dqgBhBNEiwA7PryaM0d3v97a9gUdGt94ZTozGbrL2ZElodyIziLZW5nHgbuYkzXj7jgsRoCHm4QAvD_BwE"
+                  class="text-reset"
+                  >MY school</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/AntonioCancemi"
+          >ANTONIOCANCEMI</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

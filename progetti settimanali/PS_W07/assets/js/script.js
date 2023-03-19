@@ -32,7 +32,12 @@ let listArticle = [
     price: 100, //REQUIRED
   },
 ];
-
+const hideSpinner = function () {
+  let spinnerReference = document.getElementsByClassName(
+    "spinner-border text-warning"
+  )[0];
+  spinnerReference.classList.add("d-none");
+};
 const postArticle = async function (newArticle) {
   try {
     let response = await fetch(
@@ -73,7 +78,7 @@ const getArticle = async function () {
       articleColle = await response.json();
       console.log("get");
       console.log(articleColle);
-
+      hideSpinner();
       start();
     } else {
     }
@@ -91,20 +96,26 @@ const renderCard = function (article) {
   cardContainerReference.innerHTML += `   
     <div class="col">
     <div class="card h-100">
-      <img
-        src="${article.imageUrl}"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">${article.name}</h5>
+    <div class="d-flex felx-collum align-itmes-center">      <img
+      
+    src="${article.imageUrl}"
+    class="card-img-top "
+    alt="..."
+  /></div>
+
+      <div class="card-body  d-flex align-items-end ">
+      <div class="border-top w-100">        
+      <h5 class="card-title  w fw-bold">${article.name}</h5>
         <h5 class="card-title">${article.brand}</h5>
+        <h5 class="card-title text-secondary">${article.price} €</h5>
         
-        <a  href="dettagli.html?id=${article._id}2" class="btn btn-primary btn-sm">dettagli</a>
+        <a  href="dettagli.html?id=${article._id}" class="btn btn-primary btn-sm">DETAILS</a>
+        <a  href="backoffice.html?id=${article._id}" class="btn btn-secondary btn-sm">EDIT</a>
+      </div>
 
       </div>
       <div class="card-footer">
-        <small class="text-muted"></small>
+        <small class="text-muted">User: ${article.userId}</small>
       </div>
     </div>
   </div>`;
@@ -117,3 +128,23 @@ const start = function () {
 };
 
 //passaggio parametri dettegli
+const deleteArticle = async function (newArticle) {
+  try {
+    let response = await fetch(
+      "https://striveschool-api.herokuapp.com/api/product/" +
+        "64147e23f81b4200139b2c37",
+      {
+        headers: {
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzA3OWY4MWI0MjAwMTM5YjI3ZTUiLCJpYXQiOjE2NzkwNDQ3MzAsImV4cCI6MTY4MDI1NDMzMH0.gy8K_14ePxxMXiiSIbFr9hNNWic0Oe_T9TQCmJAmkdA",
+        },
+        method: `DELETE`,
+        body: newArticle,
+      }
+    );
+    //console.log("Post");
+    //console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+};
